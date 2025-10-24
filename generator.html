@@ -283,21 +283,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 `;
-
-            const outputElement = document.getElementById('output-code');
-            outputElement.value = finalCode.trim();
-            document.getElementById('copy-btn').style.display = 'block';
-        });
-
-        document.getElementById('copy-btn').addEventListener('click', function() {
-            const outputElement = document.getElementById('output-code');
-            outputElement.select();
-            document.execCommand('copy');
-            this.innerText = 'تم النسخ!';
-            setTimeout(() => {
-                this.innerText = 'نسخ الكود';
-            }, 2000);
-        });
-    </script>
-</body>
-</html>
